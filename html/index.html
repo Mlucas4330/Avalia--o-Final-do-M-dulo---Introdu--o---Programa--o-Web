@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de login</title>
+  <link rel="stylesheet" href="../style/style.css" />
+  <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <section class="section-login">
+    <h1>Faça seu login na plataforma</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem
+      autem maxime perspiciatis, reprehenderit dignissimos illum soluta odio
+      vitae non suscipit optio deleniti, quidem provident, reiciendis
+      pariatur ratione! Iure, maiores.
+    </p>
+  </section>
+  <div class="modal-erro-vazio" id="modal-erro-vazio">
+    <h1>Ops.. Algo deu errado!</h1>
+  </div>
+  <div class="modal-sucesso" id="modal-sucesso">
+    <h1>Login realizado com sucesso!</h1>
+  </div>
+  <form class="form-login">
+    <input type="text" placeholder="Usuário" id="usuario" />
+    <input type="password" placeholder="Senha" class="senha" id="senha" />
+    <button type="submit" id="submit-button">Entrar</button>
+    <small>Não tem uma conta?<a href="../html/cadastro.html"> Registre-se</a></small>
+  </form>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>

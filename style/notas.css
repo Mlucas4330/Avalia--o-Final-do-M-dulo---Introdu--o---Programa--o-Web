@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+    --Rosa: hsl(0, 100%, 74%);
+    --Verde: hsl(154, 73%, 45%);
+    --Vermelho: hsl(0, 69%, 48%);
+    --Branco: #fff;
+    --Roxo: hsl(248, 32%, 49%);
+    --Cinza-escuro: hsl(249, 10%, 26%);
+    --Cinza-claro: hsl(246, 25%, 77%);
+    --Font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000b4;
+}
+
+html {
+    font-size: var(--Font-size);
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: hsl(0, 100%, 74%) url(../imagens/bg-intro-desktop.png);
+    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-titulo {
+    background-color: var(--Roxo);
+    width: 100vw;
+    height: 10vh;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    color: var(--Branco);
+}
+
+.header-titulo nav {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.header-titulo nav h1, .header-titulo nav span {
+    color: var(--Branco);
+}
+
+.button-sair {
+    border: none;
+    color: var(--Branco);
+    padding: 0.5rem 2rem;
+    background-color: var(--Roxo);
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.486);
+    font-weight: bold;
+}
+
+.button-sair:hover {
+    cursor: pointer;
+    padding: 0.7rem 2.1rem;
+    transition: 0.6s;
+}
+
+.table-notas {
+    width: 95%;
+    margin: 0 1rem;
+    background-color: var(--Branco);
+    border-collapse: collapse;
+
+}
+
+.width-1 {
+    width: 1%;
+}
+
+.width-20 {
+    width: 20%;
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.width-11 {
+    width: 11%;
+}
+
+
+.table-notas th {
+    background-color: var(--Roxo);
+    color: var(--Branco);
+}
+
+.table-notas th,
+td {
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    padding: 1rem;
+}
+
+.button-apagar,
+.button-editar {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    color: var(--Branco);
+}
+
+.button-apagar {
+    background-color: var(--Vermelho);
+}
+
+.button-editar {
+    background-color: var(--Verde);
+}
+
+.button-apagar:hover,
+.fechar-modal:hover {
+    background-color: hsl(0, 82%, 41%);
+    cursor: pointer;
+}
+
+.button-editar:hover,
+.button-add:hover,
+.button-submit:hover {
+    background-color: hsl(154, 83%, 37%);
+    cursor: pointer;
+}
+
+.button-add {
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: var(--Verde);
+    color: var(--Branco);
+    border: none;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 19rem;
+    width: 25rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.521);
+    background: linear-gradient(hsl(271, 55%, 38%), var(--Roxo));
+}
+
+.fechar-modal {
+    position: inherit;
+    right: 2rem;
+    top: 1rem;
+    background-color: var(--Vermelho);
+    border: none;
+    padding: 0.4rem 0.5rem;
+    border-radius: 50%;
+    color: var(--Branco);
+}
+
+.form-add {
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: inherit;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-add input {
+    padding: 1rem;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.button-submit {
+    background-color: var(--Verde);
+    border: none;
+    color: var(--Branco);
+    border-radius: 3px;
+}

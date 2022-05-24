@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/notas.css">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <title>Página de notas</title>
+</head>
+
+<body>
+    <header class="header-titulo">
+        <nav>
+            <h1>Seja Bem Vindo(a), <span id="nome"> </span></h1>
+            <button class="button-sair" id="sair">SAIR</button>
+        </nav>
+    </header>
+    <table class="table-notas" id="tables-notas">
+        <tr>
+            <th class="width-1">#</th>
+            <th class="width-20">Descrição</th>
+            <th class="width-30">Detalhamento</th>
+            <th class="width-11">Ação</th>
+        </tr>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <div class="modal" id="modal">
+        <button class="fechar-modal" id="fechar-modal">X</button>
+        <form class="form-add" id="form-add">
+            <input type="text" placeholder="Descrição" id="descricao">
+            <input type="text" placeholder="Detalhamento"  id="detalhamento">
+            <input type="submit" class="button-submit" id="button-submit">
+            <input type="hidden" name="idx" id="idx" value="novo" />
+        </form>
+    </div>
+    <button class="button-add" id="button-add">+</button>
+    <script src="../js/notas.js"></script>
+</body>
+
+</html>

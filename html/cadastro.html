@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de cadastro</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <section class="section-cadastro">
+        <h1>
+            Esse porro distinctio mollitia fugit molestias quae omnis dicta
+            voluptate sit? Neque?
+        </h1>
+        <p>Ausamus rem maxime quaerat. Maxime.</p>
+    </section>
+    <div class="modal-erro-vazio" id="modal-erro-vazio">
+        <h1>Ops.. Algo deu errado!</h1>
+    </div>
+    <div class="modal-erro-info" id="modal-erro-info">
+        <h1>Ops.. Os campos estão incorretos!</h1>
+    </div>
+    <div class="modal-sucesso" id="modal-sucesso">
+        <h1>Conta foi criada com sucesso!</h1>
+    </div>
+    <form class="form-cadastro" id="form-cadastro">
+        <label for="input-usuario" id="label-usuario"></label>
+        <input type="text" placeholder="Usuário" id="input-usuario" />
+
+        <label for="input-senha" id="label-senha"></label>
+        <input type="password" placeholder="Senha" id="input-senha" />
+
+        <label for="input-confirma-senha" id="label-confirma-senha"></label>
+        <input type="password" placeholder="Confirme sua Senha" id="input-confirma-senha" />
+
+        <button type="submit" id="submit-button">CRIAR CONTA AGORA</button>
+        <small>
+            Ao clicar no botão, você aceita os nossos<span>Termos de serviço.</span>
+        </small>
+    </form>
+    <script src="../js/cadastro.js"></script>
+</body>
+
+</html>
